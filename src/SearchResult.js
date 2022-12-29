@@ -11,7 +11,7 @@ const SearchResult = ({ searchTerm }) => {
   const [isPending, setIsPending] = useState(true);
 
   //   setup youtube search api
-  const apiKey = "AIzaSyAoXCIrcliZGXpLTFHlekZAZw3Gp2-AFaU"; //individual key accitivated for youtube in google developer
+  const apiKey = ""; //individual key accitivated for youtube in google developer
   const numberOfResults = 10;
   const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=${numberOfResults}&q=${searchTerm}&key=${apiKey}`;
 
