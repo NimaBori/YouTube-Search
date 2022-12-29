@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Result = ({ searchId }) => {
-  const apiKey = "AIzaSyAoXCIrcliZGXpLTFHlekZAZw3Gp2-AFaU";
+  const apiKey = ""; // needs individual google api key
   const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${searchId}&key=${apiKey}`;
   const [statistics, setStatistics] = useState(null);
   const [isPending, setIsPending] = useState(true);
